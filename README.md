@@ -46,4 +46,4 @@ curl http://localhost:3000/secret \
 
 ## License
 
-MIT License
+[MIT License](https://github.com/YosephKS/moralis-token-gating-express-server/blob/main/LICENSE)
