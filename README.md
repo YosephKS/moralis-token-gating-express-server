@@ -14,7 +14,17 @@ npm i
 yarn
 ```
 
-### 2. Run Server
+### 2. Add Environment Variables
+
+Copy `.env.example` file and rename it `.env`, then fill in the following info with your Moralis server details.
+
+```
+MORALIS_APP_ID=xxx
+MORALIS_SERVER_URL=xxx
+MORALIS_MASTER_KEY=xxx
+```
+
+### 3. Run Server
 
 ```sh
 # Using NPM
@@ -24,7 +34,7 @@ npm run start
 yarn start
 ```
 
-### 3. Call Secret API
+### 4. Call Secret API
 
 You can use any method to call the `/secret` REST API. Here is an example using CURL.
 
