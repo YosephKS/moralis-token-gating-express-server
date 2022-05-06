@@ -1,12 +1,14 @@
 const express = require("express");
-const routes = require("./routes");
+const cors = require("cors");
 const dotenv = require("dotenv");
+const routes = require("./routes");
 const app = express();
 const port = 3000;
 dotenv.config();
 
 app.use(express.json()); // for parsing application/json
 app.use(express.urlencoded({ extended: true }));
+app.use(cors());
 
 /**
  * API ROUTES

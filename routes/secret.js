@@ -24,7 +24,7 @@ const secret = async (req, res) => {
 
     // Check whether user own certain NFT on MATIC
     if (result.length > 0) {
-      const _address = result[0].get("user").get("accounts");
+      const _address = result[0].get("user").get("accounts")[0];
       const CONTRACT_ADDRESS = "0x6638cb79f6c1c70b09e8b6efebca3233d3240c74";
       const NFTs = await Moralis.Web3API.token.getNFTOwners({
         address: CONTRACT_ADDRESS,
